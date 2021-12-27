@@ -24,7 +24,7 @@ $ git clone https://github.com/<your-github-username>/pixelvibe
 
 #### Step 3: Creating a new branch (IMP)
 This is one of the very important step that you should follow to contribute in Open Source. A branch helps to manage the workflow, isolate your code and does not creates a mess. To create a new branch:
-  
+
 ```bash
 $ git branch <name_of_branch>
 $ git checkout -b <name_of_branch>
@@ -82,3 +82,16 @@ pip install -r requirements.txt
 ```
 
 **5.** Go to ` http://127.0.0.1:8000/` and enjoy the application.
+
+**To Run application using Docker**
+First of all we will create a image using this command
+```bash
+docker build -t mydyanmic .
+```
+here mydyanmic is image name you can type any other name too
+so Your image is build now you have to run it using this command.
+```bash
+docker run -d -P 8000:8000 mydyanmic 
+```
+Now you will be able to access it on localhost:8000
+
